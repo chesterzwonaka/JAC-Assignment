@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chester Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+        <ul>
+            <li><a href="#" class="logo">School of Maths and Science</a></li>
+            <li class="hideOnMobile"><a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#">About Us</a></li>
+            <li class="hideOnMobile"><a href="#">Services</a></li>
+            <li class="hideOnMobile"><a href="#">Pricing</a></li>
+            <li class="hideOnMobile"><a href="#">Login</a></li>
+            <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>ENGAGE, <span class="innovate">INNOVATE</span>, EXPLORE!</h1>
+    </header>
+    <main>
+        <p>We teach you Algebra, Number Patterns, Functions, Finance, Calculus, Probability, and Counting Principle.</p>
+        <p>In Mechanics, we cover Momentum & Impulse, Vertical Projectile Motion, and Work, Energy, and Power.</p>
+        <p>In Matter & Materials, topics include Organic Molecules and Waves.</p>
+        <p>Sound & Light covers the Doppler Effect.</p>
+        <p>Chemical Change includes Chemical Equilibrium, Acids & Bases, and Electrochemical reactions.</p>
+        <p>Electricity & Magnetism topics are Electric Circuits, Electrodynamics, and Optical Phenomena & Properties of materials.</p>
+    </main>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none'; 
+        }
+    </script>
+</body>
+</html>
+
